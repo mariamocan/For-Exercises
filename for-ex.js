@@ -8,7 +8,7 @@ const arr = [1, 20, 5, 60, 7, 14, 8, 66, 3, 222, 9, 3423423, 33];
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] > 10) console.log(arr[i]);
 }
-
+//
 const biggerthanTen = arr.filter(checkNumbers);
 
 function checkNumbers(num) {
