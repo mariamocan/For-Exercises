@@ -28,3 +28,38 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(oddNumbers);
 console.log(evenNumbers);
+
+// You have 2 arrays: [1, 20, 5, 60, 10, 7, 14, 8] and [1, 2, 3]. Create a function that has an array as a parameter. The function should console.log the following:
+// - “You have the number 10 in the array” if the array contains 10.
+// - Only the odd indexes.
+// - Only the even values.
+
+const firstArray = [1, 20, 5, 60, 10, 7, 14, 8];
+const secondArray = [1, 2, 3];
+
+function arrayParameter(...first) {
+  for (let i = 0; i < first.length; i++) {
+    if (first[i] === 10)
+      console.log(first[i], `You have the number 10 in the array`);
+    else if (first[i] % 2 === 0) console.log(first[i]);
+  }
+}
+arrayParameter(...firstArray);
+
+// Print in the console the numbers from the interval [0, 1000] that divide by 13 (split by dot . or contains dot . or use the modulo % operator).
+
+for (let i = 13; i < 1000; i++) {
+  if (i % 13 === 0) console.log(i);
+}
+
+// Count the occurrences of 4 from the array [10, 4, 8, 4, 7, 4, 29, 4, 99] and console.log them using a message like: “There are x occurrences of 4 in the array”.
+
+const occurrences = [10, 4, 8, 4, 7, 4, 29, 4, 99];
+let elementCount = {};
+
+for (let i = 0; i < occurrences.length; i++) {
+  if (i === 4) {
+    elementCount = i;
+  }
+}
+console.log(`There are ${elementCount} occurrences of 4 in the array`);
