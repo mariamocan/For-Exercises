@@ -13,9 +13,6 @@ function checkForDuplicateLetters(str) {
           break;
         }
       }
-      if (isDuplicate) {
-        break;
-      }
     }
   }
   if (!isDuplicate) {
