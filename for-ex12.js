@@ -15,13 +15,33 @@ function checkForDuplicateLetters(str) {
       }
     }
   }
-  if (!isDuplicate) {
-    return false;
-  } else return true;
+  if (isDuplicate) {
+    return true;
+  }
+  return false;
 }
 console.log(checkForDuplicateLetters("abcdefg"));
 
 //Variant2
+function checkForDuplicateLetters(str) {
+  let isDuplicate = false;
+  const arr = [...str];
+  // ['C', 'o', 'd', 'o', 'n', 'u', 't']
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        isDuplicate = true;
+        break;
+      }
+    }
+  }
+  if (isDuplicate) {
+    return true;
+  }
+  return false;
+}
+
+//Variant3
 
 let toSearch = [];
 let result = false;
