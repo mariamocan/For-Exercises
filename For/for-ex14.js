@@ -9,9 +9,17 @@ const arrofUsers = [
   { id: 3, name: "C" },
   { id: 4, name: "C" },
 ];
-function filterArray(arr) {
+
+function filterArray(arr, elementToSearch) {
+  let result = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].name === "C") console.log(arr[i]);
+    if (arr[i].name === elementToSearch) {
+      result.push(arr[i]);
+    }
   }
+  return result;
 }
-filterArray(arrofUsers);
+
+console.log(filterArray(arrofUsers, "C"));
+console.log(filterArray(arrofUsers, "D"));
+console.log(filterArray(arrofUsers, "A"));

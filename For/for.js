@@ -2,7 +2,7 @@
 
 // for (let i = 0; i < 3; i++) {
 //   console.log("level 1");
-//   for (let j = 0; j < 2; j++) {
+//   for (let j = 3; j < 7; j++) {
 //     console.log("level 2");
 //   }
 // }

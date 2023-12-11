@@ -10,11 +10,10 @@ for (let i = 0; i < arr.length; i++) {
   if (arr[i] > 10) console.log(arr[i]);
 }
 //
-const biggerthanTen = arr.filter(checkNumbers);
-
-function checkNumbers(num) {
+const biggerthanTen = arr.filter((num) => {
   return num > 10;
-}
+});
+
 console.log(biggerthanTen);
 
 let oddNumbers = [];
